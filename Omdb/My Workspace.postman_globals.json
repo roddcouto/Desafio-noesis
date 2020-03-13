@@ -1,0 +1,29 @@
+{
+	"id": "51afee97-5e62-4402-8aea-0007957eb06d",
+	"values": [
+		{
+			"key": "ID_DO_FILME",
+			"value": "tt1285016",
+			"enabled": true
+		},
+		{
+			"key": "API_KEY",
+			"value": "52ec71bf",
+			"enabled": true
+		},
+		{
+			"key": "FILME_INEXISTENTE",
+			"value": "parassite",
+			"enabled": true
+		},
+		{
+			"key": "ID_ERRADO",
+			"value": "tt9185016",
+			"enabled": true
+		}
+	],
+	"name": "My Workspace Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2020-03-13T00:30:17.436Z",
+	"_postman_exported_using": "Postman/7.15.0"
+}

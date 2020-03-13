@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "7e4ee08c-e427-49dd-b312-66be195d6293",
+		"name": "Desafio Técnico Noesis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Search Movie",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d9087daf-e5c8-4761-837b-7381a3bc0a36",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Movie title is correct\", function () {",
+							"    pm.expect(jsonData.Title).to.eql(\"The Social Network\");",
+							"});",
+							"",
+							"pm.test(\"Movie year is correct\", function () {",
+							"    pm.expect(jsonData.Year).to.eql(\"2010\");",
+							"});",
+							"",
+							"pm.test(\"Movie language is correct\", function () {",
+							"    pm.expect(jsonData.Language).to.eql(\"English, French\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.omdbapi.com/?i={{ID_DO_FILME}}&apikey={{API_KEY}}",
+					"protocol": "http",
+					"host": [
+						"www",
+						"omdbapi",
+						"com"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "i",
+							"value": "{{ID_DO_FILME}}"
+						},
+						{
+							"key": "apikey",
+							"value": "{{API_KEY}}"
+						}
+					]
+				},
+				"description": "Request to search a movie by ID.\nTests with postman to validate data:\n- Movie Title\n- Movie Year\n- Movie Language"
+			},
+			"response": []
+		},
+		{
+			"name": "Search Wrong Movie",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6271b41c-829b-4486-a4df-80e3cf36b70c",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Response is false\", function () {",
+							"    ",
+							"    pm.expect(jsonData.Response).to.eql(\"False\");",
+							"});",
+							"",
+							"",
+							"pm.test(\"Error is movie not found\", function () {",
+							"    ",
+							"    pm.expect(jsonData.Error).to.eql(\"Movie not found!\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.omdbapi.com/?t={{FILME_INEXISTENTE}}&apikey={{API_KEY}}",
+					"protocol": "http",
+					"host": [
+						"www",
+						"omdbapi",
+						"com"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "t",
+							"value": "{{FILME_INEXISTENTE}}"
+						},
+						{
+							"key": "apikey",
+							"value": "{{API_KEY}}"
+						}
+					]
+				},
+				"description": "Request to search a movie by title, but using the wrong title in the url."
+			},
+			"response": []
+		},
+		{
+			"name": "Search Wrong Movie By Id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1853f3be-59b3-4fca-af5e-4817f3d35ddd",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"pm.test(\"Response is false\", function () {",
+							"    ",
+							"    pm.expect(jsonData.Response).to.eql(\"False\");",
+							"});",
+							"",
+							"",
+							"pm.test(\"Error is Error getting data\", function () {",
+							"    ",
+							"    pm.expect(jsonData.Error).to.eql(\"Error getting data.\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.omdbapi.com/?i={{ID_ERRADO}}&apikey={{API_KEY}}",
+					"protocol": "http",
+					"host": [
+						"www",
+						"omdbapi",
+						"com"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "i",
+							"value": "{{ID_ERRADO}}"
+						},
+						{
+							"key": "apikey",
+							"value": "{{API_KEY}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"id": "14109559-55a0-47af-b5a8-138bddbaf879",
+			"value": "",
+			"type": "string",
+			"disabled": true
+		}
+	],
+	"protocolProfileBehavior": {}
+}
