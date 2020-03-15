@@ -1,0 +1,5 @@
+C:\Desafio Noesis\noesis\DescontoFilme\DescontoFilme\bin\Debug\DescontoFilme.dll
+C:\Desafio Noesis\noesis\DescontoFilme\DescontoFilme\bin\Debug\DescontoFilme.pdb
+C:\Desafio Noesis\noesis\DescontoFilme\DescontoFilme\obj\Debug\DescontoFilme.csprojAssemblyReference.cache
+C:\Desafio Noesis\noesis\DescontoFilme\DescontoFilme\obj\Debug\DescontoFilme.dll
+C:\Desafio Noesis\noesis\DescontoFilme\DescontoFilme\obj\Debug\DescontoFilme.pdb
