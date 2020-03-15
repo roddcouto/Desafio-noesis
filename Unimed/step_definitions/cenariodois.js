@@ -136,8 +136,8 @@ Then('Os resultados nas páginas um, dois e três não apresentam resultados de 
         .end((err,res) => {
             res.should.have.status(202);
             res.should.be.an('Object');
-            res.text.should.include("nmEstado","Rio de Janeiro","nmCidade","Rio de Janeiro","especialidades")
-            res.text.should.not.include("São Paulo")
+            res.text.should.include("nmEstado","Rio de Janeiro","nmCidade","Rio de Janeiro","sgUF","RJ","especialidades")
+            res.text.should.not.include("São Paulo", "SP")
         });
 
     chai.request('https://api.unimed.coop.br')
@@ -167,7 +167,7 @@ Then('Os resultados nas páginas um, dois e três não apresentam resultados de 
         .end((err,res) => {
             res.should.have.status(202);
             res.should.be.an('Object');
-            res.text.should.include("nmEstado","Rio de Janeiro","nmCidade","Rio de Janeiro","especialidades")
-            res.text.should.not.include("São Paulo")
+            res.text.should.include("nmEstado","Rio de Janeiro","nmCidade","Rio de Janeiro","sgUF","RJ","especialidades")
+            res.text.should.not.include("São Paulo", "SP")
         });
   });
