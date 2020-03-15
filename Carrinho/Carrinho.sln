@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carrinho", "Carrinho\Carrinho.csproj", "{7CA21998-EC3B-4350-A44D-F6DF33B78D1D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7CA21998-EC3B-4350-A44D-F6DF33B78D1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CA21998-EC3B-4350-A44D-F6DF33B78D1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CA21998-EC3B-4350-A44D-F6DF33B78D1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CA21998-EC3B-4350-A44D-F6DF33B78D1D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C276829-F5B0-4BC3-9858-1E1FDA23F87B}
+	EndGlobalSection
+EndGlobal

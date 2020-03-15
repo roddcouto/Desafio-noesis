@@ -1,0 +1,11 @@
+C:\Desafio Noesis\noesis\Carrinho\Carrinho\bin\Debug\netcoreapp3.1\Carrinho.exe
+C:\Desafio Noesis\noesis\Carrinho\Carrinho\bin\Debug\netcoreapp3.1\Carrinho.deps.json
+C:\Desafio Noesis\noesis\Carrinho\Carrinho\bin\Debug\netcoreapp3.1\Carrinho.runtimeconfig.json
+C:\Desafio Noesis\noesis\Carrinho\Carrinho\bin\Debug\netcoreapp3.1\Carrinho.runtimeconfig.dev.json
+C:\Desafio Noesis\noesis\Carrinho\Carrinho\bin\Debug\netcoreapp3.1\Carrinho.dll
+C:\Desafio Noesis\noesis\Carrinho\Carrinho\bin\Debug\netcoreapp3.1\Carrinho.pdb
+C:\Desafio Noesis\noesis\Carrinho\Carrinho\obj\Debug\netcoreapp3.1\Carrinho.csprojAssemblyReference.cache
+C:\Desafio Noesis\noesis\Carrinho\Carrinho\obj\Debug\netcoreapp3.1\Carrinho.AssemblyInfoInputs.cache
+C:\Desafio Noesis\noesis\Carrinho\Carrinho\obj\Debug\netcoreapp3.1\Carrinho.AssemblyInfo.cs
+C:\Desafio Noesis\noesis\Carrinho\Carrinho\obj\Debug\netcoreapp3.1\Carrinho.dll
+C:\Desafio Noesis\noesis\Carrinho\Carrinho\obj\Debug\netcoreapp3.1\Carrinho.pdb
