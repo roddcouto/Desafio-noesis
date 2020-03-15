@@ -29,7 +29,10 @@ Given('O paciente acessa o guia médico da unimed', async function () {
             res.should.be.an('Object');
             res.body[67].should.include({ cdCidade: '3304557', nome: 'Rio de Janeiro' })
         });
+        
+});  
 
+When('O paciente pesquisa pela cidade do Rio de Janeiro', async function () {
     chai.request('https://api.unimed.coop.br')
     .get('/guia-medico/v2/cidade/3304557/unimed')
         .end((err,res) => {
@@ -45,10 +48,7 @@ Given('O paciente acessa o guia médico da unimed', async function () {
                 longitude: -43.311274
             })
         });
-        
-});  
 
-When('O paciente pesquisa pela cidade do Rio de Janeiro', async function () {
     chai.request('https://api.unimed.coop.br')
     .get('/unimed/v3/unimeds/37')
         .end((err,res) => {
